@@ -1,4 +1,31 @@
 SET_autogen/timestamp: \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QAbstractAxis \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QAbstractSeries \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QChart \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QChartGlobal \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QChartView \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QLegend \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QPieSeries \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/QPieSlice \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qabstractaxis.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qabstractseries.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qchart.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qchartglobal.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qchartview.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qlegend.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qpieseries.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qpieslice.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qtcharts-config.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCharts/qtchartsexports.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QList \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QMargins \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QRect \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QRegularExpression \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QSize \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QSizeF \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QVariant \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -28,10 +55,16 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qcontainerinfo.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qcontainertools_impl.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qcontiguouscache.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qdarwinhelpers.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qdatastream.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qdebug.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qendian.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qeventloop.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qexceptionhandling.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qflags.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qfloat16.h \
@@ -50,6 +83,7 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qline.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qlist.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qlocale.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qlogging.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qmalloc.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qmap.h \
@@ -59,6 +93,7 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qmetatype.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qminmax.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qnamespace.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qnumeric.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qobject.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qobject_impl.h \
@@ -70,6 +105,7 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qrect.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qrefcount.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qscopedpointer.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qscopeguard.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qset.h \
@@ -115,34 +151,54 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qvector.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/QBrush \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/QFont \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/QPen \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/QTransform \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qaction.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qbitmap.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qbrush.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qcolor.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qcursor.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qevent.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qeventpoint.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qfont.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qfontinfo.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qfontmetrics.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qicon.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qimage.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qinputdevice.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qpainter.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpalette.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qpen.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpixmap.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qpointingdevice.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qregion.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qrgb.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qrgba64.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qscreen.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qscreen_platform.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qtextoption.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qvector2d.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qvectornd.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlDatabase \
@@ -150,15 +206,25 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtSql/qtsql-config.h \
 	C:/Qt/6.7.2/mingw_64/include/QtSql/qtsqlexports.h \
 	C:/Qt/6.7.2/mingw_64/include/QtSql/qtsqlglobal.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsWidget \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QLabel \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicswidget.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -188,6 +254,14 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsConfigVersion.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsConfigVersionImpl.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsDependencies.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
@@ -281,6 +355,22 @@ SET_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
@@ -566,15 +656,15 @@ SET_autogen/timestamp: \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/CMakeLists.txt \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/moc_predefs.h \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/image.qrc \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/main.cpp \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/mainwindow.cpp \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/mainwindow.h \
-	C:/Users/Lenovo/OneDrive/Desktop/SET/mainwindow.ui \
+	D:/seet2.0/CMakeLists.txt \
+	D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
+	D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
+	D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
+	D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
+	D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/moc_predefs.h \
+	D:/seet2.0/image.qrc \
+	D:/seet2.0/main.cpp \
+	D:/seet2.0/mainwindow.cpp \
+	D:/seet2.0/mainwindow.h \
+	D:/seet2.0/mainwindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

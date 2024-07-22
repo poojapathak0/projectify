@@ -7,4 +7,7 @@
     <qresource prefix="/logo">
         <file>logo.png</file>
     </qresource>
+    <qresource prefix="/other/resources">
+        <file>bg_girl.png</file>
+    </qresource>
 </RCC>

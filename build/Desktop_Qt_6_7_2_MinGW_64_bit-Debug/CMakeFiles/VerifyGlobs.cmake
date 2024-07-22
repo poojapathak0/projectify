@@ -3,175 +3,174 @@
 cmake_policy(SET CMP0009 NEW)
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.c")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.c")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.c++")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.c++")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.cc")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.cc")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.ch")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.ch")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.cpp")
 set(OLD_GLOB
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/EWIEGA46WW/moc_mainwindow.cpp"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/EWIEGA46WW/qrc_image.cpp"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/EWIEGA46WW/qrc_img.cpp"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/mocs_compilation.cpp"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/main.cpp"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/mainwindow.cpp"
+  "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/EWIEGA46WW/moc_mainwindow.cpp"
+  "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/EWIEGA46WW/qrc_image.cpp"
+  "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/mocs_compilation.cpp"
+  "D:/seet2.0/main.cpp"
+  "D:/seet2.0/mainwindow.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.cxx")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.cxx")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.h")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.h")
 set(OLD_GLOB
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/include/ui_mainwindow.h"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/moc_predefs.h"
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/mainwindow.h"
+  "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/include/ui_mainwindow.h"
+  "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SET_autogen/moc_predefs.h"
+  "D:/seet2.0/mainwindow.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.h++")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.h++")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.hh")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.hh")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.hpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.hpp")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.hxx")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.hxx")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.java")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.java")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.js")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.js")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.jui")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.jui")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.qml")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.qml")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.qrc")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.qrc")
 set(OLD_GLOB
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/image.qrc"
+  "D:/seet2.0/image.qrc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.qs")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.qs")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # _directory_contents at C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Lenovo/OneDrive/Desktop/SET/*.ui")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/seet2.0/*.ui")
 set(OLD_GLOB
-  "C:/Users/Lenovo/OneDrive/Desktop/SET/mainwindow.ui"
+  "D:/seet2.0/mainwindow.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "C:/Users/Lenovo/OneDrive/Desktop/SET/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/seet2.0/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
 endif()

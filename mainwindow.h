@@ -5,6 +5,14 @@
 #include<QLabel>
 #include<QtSql/QSqlDatabase>
 #include <QMessageBox>
+#include <QRegularExpression>
+#include <QtCharts/QChartView>
+#include <QtCharts/QPieSeries>
+#include <QtCharts/QPieSlice>
+#include <QWidget>
+#include <QVector>
+
+
 
 QT_BEGIN_NAMESPACE
 
@@ -21,12 +29,15 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+     void createPieChart();
 
 
 
 private slots:
 
     void on_pushButtonlogin_clicked();
+    
+    void on_pushButtonbacklogin_clicked();
 
     void on_pushButtonCreateAccount_clicked();
 
@@ -50,19 +61,41 @@ private slots:
 
     void on_pushButtonsignup_clicked();
 
+    void on_pushButtontracker_clicked();
+
+    void on_pushButtonbacktomain_clicked();
+
+    void on_pushButtonDeleteAllTransactions_clicked();
+
+    void on_pushButtonForgotPassword_clicked();
     
-    //void on_pushButtonAddExpense_clicked();
-    //
-    //
+    void on_pushButtonLogout_clicked();
+
+
 
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
+    double totalBalance;
     void initializeDatabase();
     QLabel *dateLabel;
     QLabel *monthYearLabel;
     void addTransaction(double amount,const QString& category, const QString& description);
     void viewTransactions();
-    void createUser(const QString &firstName, const QString &middleName, const QString &lastName, const QString &username, const QString &mobileNumber, const QString &password,  const QString &answer1, const QString &answer2, const QString &answer3);
+    QString firstName, middleName, lastName, username, mobileNumber, password;
+    QString loggedInUsername;
+    bool validatePassword(const QString &password);
+    bool validateInputs();
+    bool validateSecurityAnswers();
+    void setupTransactionTable();
+    void deleteTransaction(const QString &transactionId);
+    double calculateTotalExpense();
+    double calculateTotalIncome();
+    void updateFinancialSummary();
+    void checkSecurityAnswers(const QString &username);
+    void changePassword(const QString &username);
+    void setupPieChart();
+    void updateCategoryExpenses();
+    double calculateAmountForCategory(const QString& category);
 };
 #endif // MAINWINDOW_H
