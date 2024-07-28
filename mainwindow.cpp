@@ -17,6 +17,7 @@
 #include <QtCharts/QChartView>
 #include <QtCharts/QPieSeries>
 
+
 // Your remaining implementation...
 
 
@@ -94,8 +95,12 @@ void MainWindow::on_pushButtonLogout_clicked()
 void MainWindow::initializeDatabase()
 {
     // Set up the database connection
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("../../database/users.db");
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/ACER/Desktop/semester_project/mydatabase.db");  // Use the full path
+    db.setDatabaseName("mydatabase.db");  // If the database is in the working directory
+    QString path = "C:/Users/ACER/Desktop/semester_project/mydatabase.db";
+    qDebug() << "Database Path:" << path;
+    db.setDatabaseName(path);
 
     // Open the database
     if (!db.open()) {

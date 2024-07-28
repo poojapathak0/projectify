@@ -3,11 +3,28 @@
         <file>frame.png</file>
         <file>outerFrame.png</file>
         <file>outerframe1.png</file>
+        <file>../../Downloads/icons8-user-64.png</file>
+        <file>../../Downloads/icons8-buying-64.png</file>
+        <file>../../Downloads/wallet.png</file>
+        <file>../../Downloads/icons8-money-box.gif</file>
+        <file>../../Downloads/logo.png</file>
+        <file>../../Downloads/user.png</file>
+        <file>../../Downloads/white.jpeg</file>
+        <file>../../Downloads/pp.jpg</file>
+        <file>../../Downloads/key.png</file>
+        <file>../../Downloads/privacy.png</file>
+        <file>../../Downloads/Untitled design (4).png</file>
+        <file>../../Downloads/Untitled design (2).png</file>
+        <file>../../Downloads/Untitled design (5).png</file>
+        <file>../../Downloads/contact.png</file>
+        <file>../../Downloads/signup.png</file>
+        <file>../../Downloads/cyber-security.png</file>
+        <file>../../Downloads/revenue.png</file>
+        <file>../../Downloads/choice.png</file>
+        <file>../../Downloads/arrow.png</file>
     </qresource>
     <qresource prefix="/logo">
         <file>logo.png</file>
     </qresource>
-    <qresource prefix="/other/resources">
-        <file>bg_girl.png</file>
-    </qresource>
+    <qresource prefix="/other/resources"/>
 </RCC>
