@@ -1,9 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include<vector>
-#include<string>
 #include<QString>
-#include<fstream>
 #include<QSqlDatabase>
 #include <QSqlError>
 #include <QSqlQuery>
@@ -19,6 +16,13 @@
 
 
 // Your remaining implementation...
+
+void checkDatabaseDriver()
+{
+    QStringList drivers = QSqlDatabase::drivers();
+    qDebug() << "Available drivers:" << drivers;
+    qDebug() << "SQLite Driver Available:" << QSqlDatabase::isDriverAvailable("QSQLITE");
+}
 
 
 
@@ -96,11 +100,11 @@ void MainWindow::initializeDatabase()
 {
     // Set up the database connection
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/ACER/Desktop/semester_project/mydatabase.db");  // Use the full path
-    db.setDatabaseName("mydatabase.db");  // If the database is in the working directory
-    QString path = "C:/Users/ACER/Desktop/semester_project/mydatabase.db";
-    qDebug() << "Database Path:" << path;
-    db.setDatabaseName(path);
+   // db.setDatabaseName("C:/Users/ACER/Desktop/semester_project/database/users.db");  // Use the full path
+    db.setDatabaseName("users.db");  // If the database is in the working directory
+ //   QString path = "C:/Users/ACER/Desktop/semester_project/database/users.db";
+  //  qDebug() << "Database Path:" << path;
+  //  db.setDatabaseName(path);
 
     // Open the database
     if (!db.open()) {
@@ -158,6 +162,8 @@ void MainWindow::on_pushButtonsignup_clicked()
 //navigation
 void MainWindow::on_pushButtonlogin_clicked()
 {
+    initializeDatabase();
+
     QString userName = ui->lineEditusername->text();
     QString userPassword = ui->lineEditpassword->text();
 
@@ -167,37 +173,34 @@ void MainWindow::on_pushButtonlogin_clicked()
         return;
     }
 
-    if (db.isOpen()) {
-        QSqlQuery query;
-        query.prepare("SELECT * FROM users WHERE username = :username AND password = :password");
-        query.bindValue(":username", userName);
-        query.bindValue(":password", userPassword);
+    QSqlQuery query;
+    query.prepare("SELECT * FROM users WHERE username = :username AND password = :password");
+    query.bindValue(":username", userName);
+    query.bindValue(":password", userPassword);
 
-        if (!query.exec()) {
-            QMessageBox::critical(this, "Database Error", "Failed to query database: " + query.lastError().text());
-            return;
-        }
-
-        if (query.next()) {
-            // Login successful
-            loggedInUsername = userName;  // Store the logged-in username
-            QMessageBox::information(this, "Login Successful", "Welcome, " + userName + "!");
-            ui->stackedWidget->setCurrentIndex(3); // Switch to the next page
-            viewTransactions();
-            updateFinancialSummary();
-        } else {
-            // Login failed
-            QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
-        }
-    } else {
-        QMessageBox::critical(this, "Database Error", "Database connection failed!");
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Database Error", "Failed to query database: " + query.lastError().text());
+        return;
     }
+
+    if (query.next()) {
+        // Login successful
+        loggedInUsername = userName;  // Store the logged-in username
+        QMessageBox::information(this, "Login Successful", "Welcome, " + userName + "!");
+        ui->stackedWidget->setCurrentIndex(3); // Switch to the next page
+        viewTransactions();
+        updateFinancialSummary();
+    } else {
+        // Login failed
+        QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
+    }
+
 }
 
 bool MainWindow::validatePassword(const QString &password)
 {
     // Define forbidden special characters
-    QString forbiddenChars = "~!@#";
+    //QString forbiddenChars = "~!@#";
 
     // Check password length
     if (password.length() < 8) {
@@ -206,12 +209,12 @@ bool MainWindow::validatePassword(const QString &password)
     }
 
     // Check for forbidden characters
-    for (const QChar &ch : password) {
-        if (forbiddenChars.contains(ch)) {
-            QMessageBox::warning(this, "Password Error", "Password contains forbidden special characters.");
-            return false;
-        }
-    }
+    // for (const QChar &ch : password) {
+    //     if (forbiddenChars.contains(ch)) {
+    //         QMessageBox::warning(this, "Password Error", "Password contains forbidden special characters.");
+    //         return false;
+    //     }
+    // }
 
     return true;
 }
@@ -293,45 +296,84 @@ void MainWindow::on_pushButtonconfirm_clicked()
         return;
     }
 
-    if (db.isOpen()) {
-        QSqlQuery query;
-        query.prepare("INSERT INTO users (first_name, middle_name, last_name, username, mobile_number, password, security_answer1, security_answer2, security_answer3) "
-                      "VALUES (:firstName, :middleName, :lastName, :username, :mobileNumber, :password, :answer1, :answer2, :answer3)");
-        query.bindValue(":firstName", firstName);
-        query.bindValue(":middleName", middleName);
-        query.bindValue(":lastName", lastName);
-        query.bindValue(":username", username);
-        query.bindValue(":mobileNumber", mobileNumber);
-        query.bindValue(":password", password);
-        query.bindValue(":answer1", answer1);
-        query.bindValue(":answer2", answer2);
-        query.bindValue(":answer3", answer3);
 
-        if (!query.exec()) {
-            // Check for unique constraint violation in the error message
-            QString errorMsg = query.lastError().text();
-            if (errorMsg.contains("UNIQUE constraint failed") || errorMsg.contains("UNIQUE constraint")) {
-                QMessageBox::warning(this, "Registration Error", "Username or mobile number already exists.");
-                ui->stackedWidget->setCurrentIndex(1); // Go back to the create account page
-            } else {
-                QMessageBox::critical(this, "Error", "Failed to add user: " + errorMsg);
-            }
+
+    initializeDatabase();
+    QSqlQuery query;
+    query.prepare("INSERT INTO users (first_name, middle_name, last_name, username, mobile_number, password, security_answer1, security_answer2, security_answer3) "
+                  "VALUES (:firstName, :middleName, :lastName, :username, :mobileNumber, :password, :answer1, :answer2, :answer3)");
+    query.bindValue(":firstName", firstName);
+    query.bindValue(":middleName", middleName);
+    query.bindValue(":lastName", lastName);
+    query.bindValue(":username", username);
+    query.bindValue(":mobileNumber", mobileNumber);
+    query.bindValue(":password", password);
+    query.bindValue(":answer1", answer1);
+    query.bindValue(":answer2", answer2);
+    query.bindValue(":answer3", answer3);
+
+    if (!query.exec()) {
+        // Check for unique constraint violation in the error message
+        QString errorMsg = query.lastError().text();
+        if (errorMsg.contains("UNIQUE constraint failed") || errorMsg.contains("UNIQUE constraint")) {
+            QMessageBox::warning(this, "Registration Error", "Username or mobile number already exists.");
+            ui->stackedWidget->setCurrentIndex(1); // Go back to the create account page
         } else {
-            QMessageBox::information(this, "Success", "User added successfully");
-            // Clear input fields after successful registration
-            ui->lineEditFirstName->clear();
-            ui->lineEditMiddleName->clear();
-            ui->lineEditLastName->clear();
-            ui->lineEditUsername->clear();
-            ui->lineEditMobileNumber->clear();
-            ui->lineEditPassword->clear();
-            ui->lineEditSecurityAnswer1->clear();
-            ui->lineEditSecurityAnswer2->clear();
-            ui->lineEditSecurityAnswer3->clear();
-            ui->stackedWidget->setCurrentIndex(0); // Go to the login page
+            QMessageBox::critical(this, "Error", "Failed to add user: " + errorMsg);
         }
     } else {
-        QMessageBox::critical(this, "Error", "Database connection failed!");
+        QMessageBox::information(this, "Success", "User added successfully");
+        // Clear input fields after successful registration
+        ui->lineEditFirstName->clear();
+        ui->lineEditMiddleName->clear();
+        ui->lineEditLastName->clear();
+        ui->lineEditUsername->clear();
+        ui->lineEditMobileNumber->clear();
+        ui->lineEditPassword->clear();
+        ui->lineEditSecurityAnswer1->clear();
+        ui->lineEditSecurityAnswer2->clear();
+        ui->lineEditSecurityAnswer3->clear();
+        ui->stackedWidget->setCurrentIndex(0); // Go to the login page
+    }
+    if (db.isOpen()) {
+        // QSqlQuery query;
+        // query.prepare("INSERT INTO users (first_name, middle_name, last_name, username, mobile_number, password, security_answer1, security_answer2, security_answer3) "
+        //               "VALUES (:firstName, :middleName, :lastName, :username, :mobileNumber, :password, :answer1, :answer2, :answer3)");
+        // query.bindValue(":firstName", firstName);
+        // query.bindValue(":middleName", middleName);
+        // query.bindValue(":lastName", lastName);
+        // query.bindValue(":username", username);
+        // query.bindValue(":mobileNumber", mobileNumber);
+        // query.bindValue(":password", password);
+        // query.bindValue(":answer1", answer1);
+        // query.bindValue(":answer2", answer2);
+        // query.bindValue(":answer3", answer3);
+
+        // if (!query.exec()) {
+        //     // Check for unique constraint violation in the error message
+        //     QString errorMsg = query.lastError().text();
+        //     if (errorMsg.contains("UNIQUE constraint failed") || errorMsg.contains("UNIQUE constraint")) {
+        //         QMessageBox::warning(this, "Registration Error", "Username or mobile number already exists.");
+        //         ui->stackedWidget->setCurrentIndex(1); // Go back to the create account page
+        //     } else {
+        //         QMessageBox::critical(this, "Error", "Failed to add user: " + errorMsg);
+        //     }
+        // } else {
+        //     QMessageBox::information(this, "Success", "User added successfully");
+        //     // Clear input fields after successful registration
+        //     ui->lineEditFirstName->clear();
+        //     ui->lineEditMiddleName->clear();
+        //     ui->lineEditLastName->clear();
+        //     ui->lineEditUsername->clear();
+        //     ui->lineEditMobileNumber->clear();
+        //     ui->lineEditPassword->clear();
+        //     ui->lineEditSecurityAnswer1->clear();
+        //     ui->lineEditSecurityAnswer2->clear();
+        //     ui->lineEditSecurityAnswer3->clear();
+        //     ui->stackedWidget->setCurrentIndex(0); // Go to the login page
+        // }
+    } else {
+        QMessageBox::critical(this, "Error", "Database connection failed !");
     }
 }
 void MainWindow::on_pushButtonbacklogin_clicked()
@@ -454,7 +496,7 @@ void MainWindow::setupTransactionTable()
 
 void MainWindow::viewTransactions()
 {
-    if (!db.isOpen()) {
+    if (db.isOpen()) {
         qDebug() << "Database connection is not open!";
         QMessageBox::critical(this, "Database Error", "Database connection failed!");
         return;
@@ -544,7 +586,7 @@ void MainWindow::on_pushButtonDeleteAllTransactions_clicked()
 
 double MainWindow::calculateTotalExpense()
 {
-    if (!db.isOpen()) {
+    if (db.isOpen()) {
         qDebug() << "Database connection is not open!";
         QMessageBox::critical(this, "Database Error", "Database connection failed!");
         return 0.0;
@@ -569,7 +611,7 @@ double MainWindow::calculateTotalExpense()
 
 double MainWindow::calculateTotalIncome()
 {
-    if (!db.isOpen()) {
+    if (db.isOpen()) {
         qDebug() << "Database connection is not open!";
         QMessageBox::critical(this, "Database Error", "Database connection failed!");
         return 0.0;
@@ -685,7 +727,7 @@ void MainWindow::changePassword(const QString &username)
 
 double MainWindow::calculateAmountForCategory(const QString& category)
 {
-    if (!db.isOpen()) {
+    if (db.isOpen()) {
         qDebug() << "Database connection is not open!";
         QMessageBox::critical(this, "Database Error", "Database connection failed!");
         return 0.0;

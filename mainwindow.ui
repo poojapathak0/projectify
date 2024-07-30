@@ -25,10 +25,11 @@
     <item row="0" column="1">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(73, 0, 109);</string>
+       <string notr="true">background-color: rgb(73, 0, 109);
+background-color: rgb(230, 231, 255);</string>
       </property>
       <property name="currentIndex">
-       <number>8</number>
+       <number>7</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout">
@@ -214,7 +215,7 @@ text-decoration: underline;</string>
             <property name="geometry">
              <rect>
               <x>110</x>
-              <y>350</y>
+              <y>330</y>
               <width>51</width>
               <height>31</height>
              </rect>
@@ -941,9 +942,9 @@ background-color: rgb(244, 240, 255);</string>
          <property name="geometry">
           <rect>
            <x>400</x>
-           <y>30</y>
+           <y>0</y>
            <width>91</width>
-           <height>21</height>
+           <height>71</height>
           </rect>
          </property>
          <property name="font">
@@ -958,9 +959,9 @@ background-color: rgb(244, 240, 255);</string>
         <widget class="QPushButton" name="pushButtonme">
          <property name="geometry">
           <rect>
-           <x>800</x>
+           <x>790</x>
            <y>40</y>
-           <width>51</width>
+           <width>81</width>
            <height>21</height>
           </rect>
          </property>
@@ -978,8 +979,8 @@ background-color: rgb(244, 240, 255);</string>
           <rect>
            <x>30</x>
            <y>40</y>
-           <width>71</width>
-           <height>21</height>
+           <width>91</width>
+           <height>31</height>
           </rect>
          </property>
          <property name="font">
@@ -994,10 +995,10 @@ background-color: rgb(244, 240, 255);</string>
         <widget class="QLabel" name="label_33">
          <property name="geometry">
           <rect>
-           <x>800</x>
-           <y>10</y>
-           <width>51</width>
-           <height>31</height>
+           <x>790</x>
+           <y>20</y>
+           <width>71</width>
+           <height>21</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -1074,32 +1075,12 @@ background-color: rgba(255, 255, 255, 0);
          </property>
         </widget>
        </widget>
-       <widget class="QFrame" name="frame_5">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>140</y>
-          <width>481</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(244, 240, 255);
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
        <widget class="QTableWidget" name="tableWidgetTransactions">
         <property name="geometry">
          <rect>
-          <x>0</x>
+          <x>20</x>
           <y>160</y>
-          <width>881</width>
+          <width>861</width>
           <height>291</height>
          </rect>
         </property>
@@ -1113,8 +1094,8 @@ background-color: rgba(255, 255, 255, 0);
        <widget class="QPushButton" name="pushButtonLogout">
         <property name="geometry">
          <rect>
-          <x>780</x>
-          <y>550</y>
+          <x>460</x>
+          <y>540</y>
           <width>81</width>
           <height>21</height>
          </rect>
@@ -1129,10 +1110,10 @@ background-color: rgba(255, 255, 255, 0);
        <widget class="QLabel" name="dateLabel">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>140</y>
-          <width>51</width>
-          <height>21</height>
+          <x>20</x>
+          <y>120</y>
+          <width>861</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1145,8 +1126,8 @@ background-color: rgba(255, 255, 255, 0);
        <widget class="QPushButton" name="pushButtonDeleteAllTransactions">
         <property name="geometry">
          <rect>
-          <x>690</x>
-          <y>550</y>
+          <x>340</x>
+          <y>540</y>
           <width>81</width>
           <height>21</height>
          </rect>
@@ -1305,8 +1286,8 @@ background-color: rgba(255, 255, 255, 0);
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(222, 207, 255);
-background-color: rgb(235, 226, 255);</string>
+         <string notr="true">background-color: rgb(239, 244, 255);
+background-color: rgb(246, 247, 255);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -1409,7 +1390,7 @@ background-color: rgb(235, 226, 255);</string>
            <x>10</x>
            <y>40</y>
            <width>81</width>
-           <height>21</height>
+           <height>31</height>
           </rect>
          </property>
          <property name="font">
@@ -1452,8 +1433,7 @@ background-color: rgb(235, 226, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(222, 207, 255);
-background-color: rgb(235, 226, 255);</string>
+         <string notr="true">background-color: rgb(240, 241, 255);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -1552,8 +1532,8 @@ background-color: rgb(235, 226, 255);</string>
           <rect>
            <x>10</x>
            <y>30</y>
-           <width>81</width>
-           <height>21</height>
+           <width>91</width>
+           <height>41</height>
           </rect>
          </property>
          <property name="font">
@@ -1571,7 +1551,7 @@ background-color: rgb(235, 226, 255);</string>
            <x>100</x>
            <y>270</y>
            <width>81</width>
-           <height>31</height>
+           <height>41</height>
           </rect>
          </property>
          <property name="font">
@@ -2320,11 +2300,15 @@ background-color: rgb(235, 226, 255);</string>
          <widget class="QPushButton" name="pushButtonbacktomain">
           <property name="geometry">
            <rect>
-            <x>20</x>
-            <y>40</y>
-            <width>83</width>
-            <height>41</height>
+            <x>800</x>
+            <y>570</y>
+            <width>51</width>
+            <height>21</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(13, 12, 12);
+background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
            <string>Back</string>
@@ -2333,8 +2317,8 @@ background-color: rgb(235, 226, 255);</string>
          <widget class="QWidget" name="verticalLayoutWidget">
           <property name="geometry">
            <rect>
-            <x>100</x>
-            <y>40</y>
+            <x>0</x>
+            <y>20</y>
             <width>871</width>
             <height>531</height>
            </rect>

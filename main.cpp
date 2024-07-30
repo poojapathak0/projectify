@@ -7,6 +7,10 @@
  #include <QStackedWidget>
  #include <QVBoxLayout>
  #include <QWidget>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QDebug>
 
 
 int main(int argc, char *argv[])
