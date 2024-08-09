@@ -29,7 +29,7 @@
 background-color: rgb(230, 231, 255);</string>
       </property>
       <property name="currentIndex">
-       <number>7</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout">
@@ -73,9 +73,9 @@ border-image: url(:/background/Downloads/white.jpeg);</string>
            <widget class="QLabel" name="Welcome">
             <property name="geometry">
              <rect>
-              <x>80</x>
+              <x>40</x>
               <y>40</y>
-              <width>121</width>
+              <width>161</width>
               <height>31</height>
              </rect>
             </property>
