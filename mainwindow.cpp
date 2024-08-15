@@ -17,6 +17,7 @@
 
 // Your remaining implementation...
 
+
 void checkDatabaseDriver()
 {
     QStringList drivers = QSqlDatabase::drivers();
@@ -30,7 +31,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     ,totalBalance(0.0)
-{
+
+{setFixedSize(850, 650);
     ui->setupUi(this);
     ui->lineEditpassword->setEchoMode(QLineEdit::Password);
     ui->lineEditPassword->setEchoMode(QLineEdit::Password);
@@ -335,7 +337,7 @@ void MainWindow::on_pushButtonconfirm_clicked()
         ui->lineEditSecurityAnswer3->clear();
         ui->stackedWidget->setCurrentIndex(0); // Go to the login page
     }
-    if (db.isOpen()) {
+    //if (db.isOpen()) {
         // QSqlQuery query;
         // query.prepare("INSERT INTO users (first_name, middle_name, last_name, username, mobile_number, password, security_answer1, security_answer2, security_answer3) "
         //               "VALUES (:firstName, :middleName, :lastName, :username, :mobileNumber, :password, :answer1, :answer2, :answer3)");
@@ -372,9 +374,9 @@ void MainWindow::on_pushButtonconfirm_clicked()
         //     ui->lineEditSecurityAnswer3->clear();
         //     ui->stackedWidget->setCurrentIndex(0); // Go to the login page
         // }
-    } else {
-        QMessageBox::critical(this, "Error", "Database connection failed !");
-    }
+   // } else {
+      //  QMessageBox::critical(this, "Error", "Database connection failed !");
+    //}
 }
 void MainWindow::on_pushButtonbacklogin_clicked()
 {

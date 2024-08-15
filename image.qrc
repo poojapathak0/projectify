@@ -22,6 +22,7 @@
         <file>../../Downloads/revenue.png</file>
         <file>../../Downloads/choice.png</file>
         <file>../../Downloads/arrow.png</file>
+        <file>../../Pictures/new .png</file>
     </qresource>
     <qresource prefix="/logo">
         <file>logo.png</file>
